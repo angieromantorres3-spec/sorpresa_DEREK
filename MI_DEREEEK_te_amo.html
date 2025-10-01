@@ -798,63 +798,85 @@ body {
 
   
 
-  <!-- Modal para mostrar la imagen y el mensaje (fuera de .flowers para no bloquear clics) -->
-  <div id="modal-flor" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; flex-direction:column;">
-    <span id="cerrar-modal" style="position:absolute; top:2vmin; right:4vmin; font-size:5vmin; color:#fff; cursor:pointer; font-family:sans-serif;">×</span>
-    <img id="modal-img" src="https://baque2005.github.io/public-files/2025/09/85ab386e-cf6e-4059-8ccc-73c70706b97a.html?utm_source=chatgpt.com" alt="Hot Wheels" style="max-width:80vw; max-height:60vh; border-radius:2vmin; box-shadow:0 0 30px #fff8; margin-bottom:2vmin;">
-    <div id="modal-msg" style="color:#fff; font-size:3vmin; text-align:center; max-width:80vw; font-family: &#39;Segoe UI&#39;, Arial, sans-serif;"></div>
-  </div>
-  <div class="flowers">
+<!-- Modal para mostrar la imagen y el mensaje (fuera de .flowers para no bloquear clics) -->
+<div id="modal-flor" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; flex-direction:column;">
+  <span id="cerrar-modal" style="position:absolute; top:2vmin; right:4vmin; font-size:5vmin; color:#fff; cursor:pointer; font-family:sans-serif;">×</span>
+  <img id="modal-img" src="img/4873329538169dc4a690e0325b1c87a0.jpg" alt="Hot Wheels" style="max-width:80vw; max-height:60vh; border-radius:2vmin; box-shadow:0 0 30px #fff8; margin-bottom:2vmin;">
+  <div id="modal-msg" style="color:#fff; font-size:3vmin; text-align:center; max-width:80vw; font-family: 'Segoe UI', Arial, sans-serif;"></div>
+</div>
+
+<div class="flowers">
+  <!-- Flor 1 -->
   <div class="flower flower--1" style="left: 0%; bottom: 18vmin; transform: rotate(-40deg); animation: moving-flower-1 4s linear infinite;" onclick="mostrarModalFlor(0)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/4873329538169dc4a690e0325b1c87a0.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/4873329538169dc4a690e0325b1c87a0.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s backwards;"></div>
+  </div>
+
+  <!-- Flor 2 -->
   <div class="flower flower--2" style="left: 10%; bottom: 20vmin; transform: rotate(-30deg); animation: moving-flower-2 4s linear infinite;" onclick="mostrarModalFlor(1)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/79ecac74713a50d35d39a1d94245ed99.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 0.2s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 0.2s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/79ecac74713a50d35d39a1d94245ed99.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 0.2s backwards;"></div>
+  </div>
+
+  <!-- Flor 3 -->
   <div class="flower flower--3" style="left: 20%; bottom: 16vmin; transform: rotate(-20deg); animation: moving-flower-3 4s linear infinite;" onclick="mostrarModalFlor(2)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/7bd20c24c575ecfa621727b59c50881d.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 0.4s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 0.4s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/7bd20c24c575ecfa621727b59c50881d.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 0.4s backwards;"></div>
+  </div>
+
+  <!-- Flor 4 -->
   <div class="flower flower--4" style="left: 30%; bottom: 22vmin; transform: rotate(-10deg); animation: moving-flower-4 3.5s linear infinite;" onclick="mostrarModalFlor(3)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/2fa24003df141ce44c1faebed7657b51.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 0.6s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 0.6s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/2fa24003df141ce44c1faebed7657b51.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 0.6s backwards;"></div>
+  </div>
+
+  <!-- Flor 5 -->
   <div class="flower flower--5" style="left: 40%; bottom: 15vmin; transform: rotate(-5deg); animation: moving-flower-5 4.5s linear infinite;" onclick="mostrarModalFlor(4)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/520ea07326484c50977b05b4442712f5.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 0.8s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 0.8s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/520ea07326484c50977b05b4442712f5.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 0.8s backwards;"></div>
+  </div>
+
+  <!-- Flor 6 -->
   <div class="flower flower--6" style="left: 60%; bottom: 19vmin; transform: rotate(5deg); animation: moving-flower-1 4s linear infinite;" onclick="mostrarModalFlor(5)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/8286980b7ca92cd3d8f9cd2738525b2a.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 1s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 1s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/8286980b7ca92cd3d8f9cd2738525b2a.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 1s backwards;"></div>
+  </div>
+
+  <!-- Flor 7 -->
   <div class="flower flower--7" style="left: 70%; bottom: 17vmin; transform: rotate(10deg); animation: moving-flower-2 4s linear infinite;" onclick="mostrarModalFlor(6)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/5b28b1b0387d59879ab0b05362464191.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 1.2s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 1.2s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/5b28b1b0387d59879ab0b05362464191.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 1.2s backwards;"></div>
+  </div>
+
+  <!-- Flor 8 -->
   <div class="flower flower--8" style="left: 80%; bottom: 21vmin; transform: rotate(20deg); animation: moving-flower-3 4s linear infinite;" onclick="mostrarModalFlor(7)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/1576be07ee594d50adc162d149a78e2b.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 1.4s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 1.4s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/1576be07ee594d50adc162d149a78e2b.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 1.4s backwards;"></div>
+  </div>
+
+  <!-- Flor 9 -->
   <div class="flower flower--9" style="left: 90%; bottom: 14vmin; transform: rotate(30deg); animation: moving-flower-4 3.5s linear infinite;" onclick="mostrarModalFlor(8)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/600560f3e38976209ce7c4f862393c70.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 1.6s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 1.6s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/600560f3e38976209ce7c4f862393c70.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 1.6s backwards;"></div>
+  </div>
+
+  <!-- Flor 10 -->
   <div class="flower flower--10" style="left: 100%; bottom: 23vmin; transform: rotate(40deg); animation: moving-flower-5 4.5s linear infinite;" onclick="mostrarModalFlor(9)">
-  <img class="flower__img--bg" src="./MI_DEREEEK_teamo_files/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor" draggable="false" style="position:absolute; left:50%; top:-3vmin; transform:translateX(-50%); width:32vmin; height:32vmin; z-index:1; opacity:0.95; pointer-events:none; user-select:none;">
-  <img src="./MI_DEREEEK_teamo_files/ccc69b6660a0e462f0d79590582573fd.jpg" alt="Girasol" style="width: 24vmin; height: 24vmin; border-radius: 50%; object-fit: cover; position: absolute; left: 50%; top: 0; transform: translateX(-50%); box-shadow: 0 2px 18px #0005; z-index: 10; animation: blooming-flower 2s 1.8s backwards;">
-      <div class="flower__line" style="animation: grow-flower-tree 4s 1.8s backwards;"></div>
-    </div>
+    <img class="flower__img--bg" src="img/a20fa7fa0c256ea866ceffbc27989923.png" alt="Fondo flor">
+    <img src="img/ccc69b6660a0e462f0d79590582573fd.jpg" alt="Girasol">
+    <div class="flower__line" style="animation: grow-flower-tree 4s 1.8s backwards;"></div>
+  </div>
+</div>
+
 
     <div class="grow-ans" style="--d:1.2s">
       <div class="flower__g-long">
